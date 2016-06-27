@@ -18,9 +18,11 @@ module.exports = function (query, fn) {
         var videos = $('.yt-lockup-video');
 
         for (i = 0; i < videos.length; i++) {
+          var link = $(videos[i]).find('.yt-uix-sessionlink').attr('href');
+          if (!link.startsWith('/watch')) continue;
           found.push({
             title: $(videos[i]).find('.yt-lockup-title a').text(),
-            link: 'https://youtube.com' + $(videos[i]).find('.yt-uix-sessionlink').attr('href')
+            link: 'https://youtube.com' + link
           });
         }
 
