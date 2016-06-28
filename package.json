@@ -1,6 +1,6 @@
 {
   "name": "youtube-crawler",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Another youtube crawler, no API key needed",
   "main": "index.js",
   "scripts": {
