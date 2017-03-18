@@ -6,7 +6,7 @@ An youtube crawler/ripper that doesn't need an API code.
 ```javascript
 var crawler = require('youtube-crawler');
 
-crawler('Cat videos', function (results) {
+crawler('Cat videos', function (err, results) {
   console.dir(results); //Outputs an array filled with cat videos.
 });
 ```
